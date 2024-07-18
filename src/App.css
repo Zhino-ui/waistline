@@ -27,6 +27,7 @@
   border: none;
   color: aqua;
   cursor: pointer;
+  
 }
 nav button{
   background:none;
@@ -37,7 +38,7 @@ nav button{
   display: none;
   position: absolute;
   flex-direction: column;
-  
+  z-index:100;
   text-align: left;
   background-color: #333;
   border-radius: 5px;
