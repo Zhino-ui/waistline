@@ -25,7 +25,7 @@ const ProductDetail = () => {
         <div className='product-detail-page'>
             <div className='product-detail-container'>
             <div className='carousel'>
-                <SliderCarousel images={productImages} />
+                <SliderCarousel className="slider" images={productImages} />
             </div>
             <div className='detail-text'>
                 <h2>{product.name}</h2>

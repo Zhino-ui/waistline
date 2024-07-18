@@ -28,7 +28,7 @@ const Clothing = () => {
     setCategory(newCategory);
   };
   return (
-    <>
+    <div className='clothing'>
       <Header/>
       <div className='shirts-container'>
         <div className='shirt-links'>
@@ -41,10 +41,10 @@ const Clothing = () => {
         </div>
         <div className='shirts-content'>
           <div className='shirt-advert'>
-            <h1>We have the perfect shirts for you!</h1>
+            <h1>We have the perfect gift for you!</h1>
             <p id='hidden'>What sets us apart is our dedication to quality, craftsmanship, and sustainability.<br/> We collaborate with talented designers and prioritize ethically sourced materials to create fashion-forward garments that you can feel good about wearing.</p> 
             <hr/>
-            <img src='#' alt='advert1'/>
+            <img src='/images/ad.jpg' alt='advert1'/>
           </div>
           <div className='shirt-lists'>
             <div className='shirts-display'>
@@ -59,7 +59,7 @@ const Clothing = () => {
                   {/* <p>{shirt.sizes_available}</p> */}
                   <div className='content-price'>
                     <button>{shirt.category}</button>
-                    <Link to={`/clothing/${shirt.id}`} id='details'>View Details</Link>
+                    <Link to={`/clothing/${shirt.id}`} id='details'>more...</Link>
                     
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const Clothing = () => {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
